@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Finder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <h1>GitHub Finder</h1>
+</header>
+<div class="container">
+    <div class="search">
+        <label for="github-username" class="searchLabel">Search GitHub Users</label>
+        <label class="searchSubLabel">Enter a username to fetch a user profile and repo</label>
+        <input type="text" id="github-username" onkeyup="check()">
+    </div>
+
+    <div class="infoWrapper">
+        <div class="subWrapper">
+            <img src="" alt="Profile Image" id="profile-image">
+            <button class="viewProfile">View Profile</button>
+        </div>
+
+        <div class="infoSubWrapper">
+            <div class="repoInfoWrapper1">
+                <div id="publicRepos">Public Repos : </div>
+                <div id="publicGists">Public Gists : </div>
+                <div id="followers">Followers : </div>
+                <div id="following">Following : </div>
+            </div>
+            <div class="repoInfoWrapper2">
+                <div id="company">Company: </div>
+                <div id="website">Website/Blog: </div>
+                <div id="location">Location: </div>
+                <div id="member-since">Member Since: </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="latestRepos">
+        <h2>Latest Repos</h2>
+        <div id="repos"></div>
+    </div>
+</div>
+<script src="githubFinder.js"></script>
+</div>
+</body>
+</html>
