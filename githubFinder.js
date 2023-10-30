@@ -63,11 +63,14 @@ function displayRepos(repos) {
         const repoItem = document.createElement('div');
         repoItem.classList.add('repo-item');
         repoItem.innerHTML = `
-          <a href="${repo.html_url}" target="_blank" class="repo-name">${repo.name}</a>
             <div class="latestReposWrapper">
-            <span class="stars">Stars: ${repo.stargazers_count}</span>
-            <span class="watchers">Watchers: ${repo.watchers_count}</span>
-            <span class="forks">Forks: ${repo.forks}</span>
+            <a href="${repo.html_url}" target="_blank" class="repo-name">${repo.name}</a>
+            <div class="repoSubWrapper">
+                    <span class="stars">Stars: ${repo.stargazers_count}</span>
+                    <span class="watchers">Watchers: ${repo.watchers_count}</span>
+                    <span class="forks">Forks: ${repo.forks}</span>
+                </div>
+            </div>
       `;
         reposList.appendChild(repoItem);
     });

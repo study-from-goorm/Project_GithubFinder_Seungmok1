@@ -126,24 +126,22 @@ img {
 
 }
 
+.latestRepos {
+
+}
+
 .repo {
     border: 1px solid #ddd;
-    padding: 10px;
-    margin-top: 10px;
     border-radius: 5px;
     position: relative;
 }
 
-.repo-title {
-    font-weight: bold;
-}
-
 .latestReposWrapper {
-    position: absolute;
-    left: 600px;
+    border: 1px solid gray;
 }
 
 .stars {
+    margin-left: 500px;
     width: 100px;
     height: 60px;
     border-radius: 10px;
